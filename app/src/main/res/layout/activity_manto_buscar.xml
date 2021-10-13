@@ -22,7 +22,7 @@
             android:text="Correo" />
 
         <Button
-            android:id="@+id/btnBuscar2"
+            android:id="@+id/btnIngresar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
