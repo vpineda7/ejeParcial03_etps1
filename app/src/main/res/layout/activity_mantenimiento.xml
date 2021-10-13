@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mantenimiento">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:padding="25dp">
+
+    <Button
+        android:id="@+id/btnNuevo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nuevo" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUscar" />
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar" />
+
+    <Button
+        android:id="@+id/btnListado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="listado" />
+  </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
