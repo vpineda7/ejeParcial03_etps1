@@ -3,12 +3,18 @@ package com.example.ejeparcial03;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class mantoBuscar extends AppCompatActivity {
-
+    Button btnBuscar;
+    EditText edtCorreo;
+    Bundle datos;
+    String accion;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manto_buscar);
+
     }
 }

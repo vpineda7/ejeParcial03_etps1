@@ -21,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
     ArrayList correos;
     ArrayList claves;
     Button btnIngresar;
+
+    Bundle datos;
+    String accion;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
         edtCorreo = findViewById(R.id.edtCorreo);
         edtClave = findViewById(R.id.edtClave);
         btnIngresar = findViewById(R.id.btnIngresar);
+
+        datos = getIntent().getExtras();
+
 
 
         btnIngresar.setOnClickListener(new View.OnClickListener() {
@@ -83,11 +90,20 @@ public class MainActivity extends AppCompatActivity {
             new ActivityResultCallback<ActivityResult>() {
                 @Override
                 public void onActivityResult(ActivityResult result) {
+
+                    String accion = result.getData().getStringExtra("accion");
+                    int estado = result.getData().getIntExtra("estado", 0);
+                    if(accion.equals("nuevo") && estado==1) {
+                        Toast.makeText(getApplicationContext(), "Los datos se almacenaron", Toast.LENGTH_SHORT).show();
+                    }
+
                     if (result.getResultCode() == RESULT_CANCELED) {
                         edtCorreo.setText("");
                         edtClave.setText("");
                     }
+
                 }
+
             }
     );
 
