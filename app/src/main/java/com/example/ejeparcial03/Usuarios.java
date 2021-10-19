@@ -17,6 +17,7 @@ public class Usuarios {
         claves.add("password");
         niveles.add(1);
 
+
     }
 
 }
