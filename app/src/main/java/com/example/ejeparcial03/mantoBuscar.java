@@ -2,7 +2,9 @@ package com.example.ejeparcial03;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -11,10 +13,14 @@ public class mantoBuscar extends AppCompatActivity {
     EditText edtCorreo;
     Bundle datos;
     String accion;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manto_buscar);
+
+
+
 
     }
 }

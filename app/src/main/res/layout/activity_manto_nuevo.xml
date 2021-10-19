@@ -17,36 +17,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Nombre"
             android:inputType="textPersonName"
-            android:paddingTop="10dp"
-            android:text="Nombre" />
+            android:paddingTop="10dp" />
 
         <EditText
             android:id="@+id/edtCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Correo"
             android:inputType="textPersonName"
-            android:paddingTop="10dp"
-            android:text="Correo" />
+            android:paddingTop="10dp" />
 
         <EditText
             android:id="@+id/edtClave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Clave"
             android:inputType="textPersonName"
-            android:paddingTop="10dp"
-            android:text="Clave" />
+            android:paddingTop="10dp" />
 
         <EditText
             android:id="@+id/edtConfirmarClave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Confirmar clave"
             android:inputType="textPersonName"
-            android:paddingTop="10dp"
-            android:text="Confirmar clave" />
+            android:paddingTop="10dp" />
 
         <RadioGroup
             android:id="@+id/rgTipo"
