@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ejeparcial03">
+    package="com.example.ejeparcial04">
 
     <application
         android:allowBackup="true"
@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat">
-        <activity android:name=".mantoBuscar"></activity>
-        <activity android:name=".mantoListado" />
-        <activity android:name=".mantoConfirmacion" />
-        <activity android:name=".mantoNuevo" />
-        <activity android:name=".Mantenimiento" />
+        <activity android:name="com.example.ejeparcial04.mantoBuscar"></activity>
+        <activity android:name="com.example.ejeparcial04.mantoListado" />
+        <activity android:name="com.example.ejeparcial04.mantoConfirmacion" />
+        <activity android:name="com.example.ejeparcial04.mantoNuevo" />
+        <activity android:name="com.example.ejeparcial04.Mantenimiento" />
         <activity android:exported="true"
-            android:name=".MainActivity">
+            android:name="com.example.ejeparcial04.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

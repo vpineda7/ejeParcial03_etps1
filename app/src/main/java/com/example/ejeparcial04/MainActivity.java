@@ -1,4 +1,4 @@
-package com.example.ejeparcial03;
+package com.example.ejeparcial04;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
@@ -7,6 +7,7 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         usuarios = new Usuarios();
+        conexion conexion = new conexion(getApplicationContext(), "sistemas", null, 1);
+        SQLiteDatabase baseDeDatos = conexion.getWritableDatabase();
+
 
         correos = usuarios.correos;
         claves = usuarios.claves;
@@ -55,27 +59,25 @@ public class MainActivity extends AppCompatActivity {
                     edtClave.setError("Favor ingresar clave válida");
                     edtClave.requestFocus();
                 } else {
-                    String user = "";
-                    String pwd = "";
-                    boolean login = false;
-                    int i = 0;
+//                    String user = "";
+//                    String pwd = "";
+//                    boolean login = false;
+//                    int i = 0;
 
-                    for (i = 0; i <correos.size(); i++) {
-
-                        user = correos.get(i).toString().toLowerCase().trim();
-                        pwd = claves.get(i).toString().trim();
-
-                        if (user.equals(correo) && pwd.equals(clave)) {
-                            login = true;
-                            break;
-                        }
-                    }
-
-                    if (login) {
-                        Intent mantenimiento = new Intent(getApplicationContext(), Mantenimiento.class);
+//                    for (i = 0; i <correos.size(); i++) {
+//                        user = correos.get(i).toString().toLowerCase().trim();
+//                        pwd = claves.get(i).toString().trim();
+//                        if (user.equals(correo) && pwd.equals(clave)) {
+//                            login = true;
+//                            break;
+//                        }
+//                    }
+                    Boolean checkuserpass = conexion.checkusernamepassword(correo,clave);
+                    if(checkuserpass==true){
                         Toast.makeText(getApplicationContext(), "Ingreso exitoso", Toast.LENGTH_LONG).show();
+                        Intent mantenimiento = new Intent(getApplicationContext(), Mantenimiento.class);
                         lanzarActividad.launch(mantenimiento);
-                    } else {
+                    }else{
                         Toast.makeText(getApplicationContext(), "Usuario o contraseña incorrecta", Toast.LENGTH_LONG).show();
                     }
 

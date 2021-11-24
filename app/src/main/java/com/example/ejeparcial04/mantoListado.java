@@ -1,6 +1,4 @@
-package com.example.ejeparcial03;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.ejeparcial04;
 
 import android.app.ListActivity;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package com.example.ejeparcial03;
+package com.example.ejeparcial04;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -41,6 +41,8 @@ public class Mantenimiento extends AppCompatActivity {
         btnEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent buscar = new Intent(getApplicationContext(), mantoBuscar.class);
+                startActivity(buscar);
 
             }
         });
@@ -48,12 +50,15 @@ public class Mantenimiento extends AppCompatActivity {
         btnSalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent principal = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(principal);
             }
         });
         btnEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent buscar = new Intent(getApplicationContext(), mantoBuscar.class);
+                startActivity(buscar);
 
             }
         });

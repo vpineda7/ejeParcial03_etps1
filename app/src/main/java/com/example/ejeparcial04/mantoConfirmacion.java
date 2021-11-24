@@ -1,9 +1,11 @@
-package com.example.ejeparcial03;
+package com.example.ejeparcial04;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -20,6 +22,10 @@ public class mantoConfirmacion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manto_confirmacion);
 
+        conexion conexion = new conexion(getApplicationContext(), "sistemas", null, 1);
+        SQLiteDatabase baseDeDatos = conexion.getWritableDatabase();
+
+
         tvNombre = findViewById(R.id.tvNombre);
         tvCorreo = findViewById(R.id.tvCorreo);
         tvClave = findViewById(R.id.tvClave);
@@ -31,12 +37,12 @@ public class mantoConfirmacion extends AppCompatActivity {
 
         Bundle confirmacion = getIntent().getExtras();
 
-        String nombre = confirmacion.getString("IntentNombre");
+        String nombres = confirmacion.getString("IntentNombres");
         String correo = confirmacion.getString("IntentCorreo");
         String clave = confirmacion.getString("IntentClave");
         String nivel = confirmacion.getString("IntentNivel");
 
-        tvNombre.setText("Nombre: "+nombre);
+        tvNombre.setText("Nombre: "+nombres);
         tvCorreo.setText("Correo: "+correo);
         tvClave.setText("Clave: "+clave);
         tvTipo.setText("Tipo: "+nivel);
@@ -45,14 +51,17 @@ public class mantoConfirmacion extends AppCompatActivity {
         btnConfirmar2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Usuarios usuario = new Usuarios();
+//                Usuarios usuario = new Usuarios();
+//                int tamano = usuario.correos.size();
+//                usuario.correos.add(tamano,nombre);
+//                usuario.claves.add(tamano,clave);
+//                usuario.nombres.add(tamano,nombre);
+//                usuario.niveles.add(tamano,nivel);
+                String consultaSql = "";
+                consultaSql = "INSERT INTO usuarios(correo, nombres, password, nivel) VALUES('" + correo + "', '" + nombres + "', '" + clave + "', '" + nivel + "')";
 
-                int tamano = usuario.correos.size();
-                usuario.correos.add(tamano,nombre);
-                usuario.claves.add(tamano,clave);
-                usuario.nombres.add(tamano,nombre);
-                usuario.niveles.add(tamano,nivel);
-
+                baseDeDatos.execSQL(consultaSql);
+                Log.i("MENSAJE", "REGISTRO INSERTADO");
                 Toast.makeText(getApplicationContext(),"Registró se creó exitosamente",Toast.LENGTH_SHORT).show();
                 Intent mantenimiento = new Intent(getApplicationContext(), Mantenimiento.class);
                 startActivity(mantenimiento);
