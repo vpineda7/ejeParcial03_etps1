@@ -16,40 +16,40 @@
             android:id="@+id/tvNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:text="Nombre: XXXXXXX" />
+            android:hint="@string/nombre"
+            android:paddingTop="20dp" />
 
         <TextView
             android:id="@+id/tvCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:text="Correo: XXXXXXX" />
+            android:hint="@string/correo"
+            android:paddingTop="20dp" />
 
         <TextView
             android:id="@+id/tvClave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:text="Clave: XXXXXXX" />
+            android:hint="@string/Clave"
+            android:paddingTop="20dp" />
 
         <TextView
             android:id="@+id/tvTipo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:text="Tipo: XXXXXXX" />
+            android:hint="@string/tipo"
+            android:paddingTop="20dp" />
 
         <Button
             android:id="@+id/btnConfirmar2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Confirmar" />
+            android:text="@string/confirmar" />
 
         <Button
             android:id="@+id/btnCancelar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cancelar" />
+            android:text="@string/cancelar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

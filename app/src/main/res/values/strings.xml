@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">ejeParcial03</string>
+    <string name="correo">Correo</string>
+    <string name="Clave">Clave</string>
+    <string name="btnIngresar">INGRESAR</string>
+    <string name="nuevo">NUEVO</string>
+    <string name="buscar">BUSCAR</string>
+    <string name="editar">EDITAR</string>
+    <string name="salir">SALIR</string>
+    <string name="eliminar">ELIMINAR</string>
+    <string name="listado">LISTADO</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="confirmar">CONFIRMAR</string>
+    <string name="nombre">Nombre</string>
+    <string name="tipo">Tipo</string>
+    <string name="confirmarClave">Confirmar Clave</string>
+    <string name="usuario">Usuario</string>
+    <string name="asistente">Asistente</string>
+    <string name="administrador">Administrador</string>
+    <string name="guardar">GUARDAR</string>
 </resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ejeParcial03</string>
+    <string name="correo">Mail</string>
+    <string name="Clave">Password</string>
+    <string name="btnIngresar">Enter</string>
+    <string name="nuevo">NEW</string>
+    <string name="buscar">SEARCH</string>
+    <string name="editar">EDIT</string>
+    <string name="salir">EXIT</string>
+    <string name="eliminar">DELETE</string>
+    <string name="listado">LIST</string>
+    <string name="cancelar">CANCEL</string>
+    <string name="confirmar">CONFIRM</string>
+    <string name="nombre">Name</string>
+    <string name="tipo">Kind</string>
+    <string name="confirmarClave">Confirm Password</string>
+    <string name="usuario">User</string>
+    <string name="asistente">Assistant</string>
+    <string name="administrador">Administrator</string>
+    <string name="guardar">SAVE</string>
+
+</resources>

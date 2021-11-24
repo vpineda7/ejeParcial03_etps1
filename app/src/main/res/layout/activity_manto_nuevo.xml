@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Nombre"
+            android:hint="@string/nombre"
             android:inputType="textPersonName"
             android:paddingTop="10dp" />
 
@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Correo"
+            android:hint="@string/correo"
             android:inputType="textPersonName"
             android:paddingTop="10dp" />
 
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Clave"
+            android:hint="@string/Clave"
             android:inputType="textPassword"
             android:paddingTop="10dp" />
 
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Confirmar clave"
+            android:hint="@string/confirmarClave"
             android:inputType="textPassword"
             android:paddingTop="10dp" />
 
@@ -59,19 +59,19 @@
                 android:id="@+id/rbUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Usuario" />
+                android:text="@string/usuario" />
 
             <RadioButton
                 android:id="@+id/rbAsistente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Asistente" />
+                android:text="@string/asistente" />
 
             <RadioButton
                 android:id="@+id/rbAdministrador"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Administrador" />
+                android:text="@string/administrador" />
 
         </RadioGroup>
 
@@ -80,14 +80,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
-            android:text="Guardar" />
+            android:text="@string/guardar" />
 
         <Button
             android:id="@+id/btnCancelar3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
-            android:text="Cancelar" />
+            android:text="@string/cancelar" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

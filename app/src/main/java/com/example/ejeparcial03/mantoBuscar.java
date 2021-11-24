@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class mantoBuscar extends AppCompatActivity {
-    Button btnBuscar;
+    Button btnBuscar, btnCancelar2;
     EditText edtCorreo;
     Bundle datos;
     String accion;
@@ -19,8 +19,16 @@ public class mantoBuscar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manto_buscar);
 
+        btnBuscar = findViewById(R.id.btnBuscar);
+        btnCancelar2 = findViewById(R.id.btnCancelar2);
+        edtCorreo = findViewById(R.id.edtCorreo);
 
 
-
+        btnCancelar2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }

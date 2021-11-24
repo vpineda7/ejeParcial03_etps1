@@ -17,36 +17,36 @@
         android:id="@+id/btnNuevo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nuevo" />
+        android:text="@string/nuevo" />
 
     <Button
         android:id="@+id/btnBuscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BUscar" />
+        android:text="@string/buscar" />
 
     <Button
         android:id="@+id/btnEditar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Editar" />
+        android:text="@string/editar" />
 
     <Button
         android:id="@+id/btnSalir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Salir" />
+        android:text="@string/salir" />
 
     <Button
         android:id="@+id/btnEliminar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Eliminar" />
+        android:text="@string/eliminar" />
 
     <Button
         android:id="@+id/btnListado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="listado" />
+        android:text="@string/listado" />
   </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -33,7 +33,8 @@ public class Mantenimiento extends AppCompatActivity {
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent buscar = new Intent(getApplicationContext(), mantoBuscar.class);
+                startActivity(buscar);
             }
         });
 
@@ -60,7 +61,8 @@ public class Mantenimiento extends AppCompatActivity {
         btnListado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent listado = new Intent(getApplicationContext(),mantoListado.class);
+                startActivity(listado);
             }
         });
     }
