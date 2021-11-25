@@ -68,7 +68,15 @@ public class Mantenimiento extends AppCompatActivity {
             public void onClick(View view) {
                 Intent listado = new Intent(getApplicationContext(),mantoListado.class);
                 startActivity(listado);
+                startActivityForResult(listado, 1);
             }
         });
+    }
+
+
+    public void startActivityForResult(int codigoDeLaActividad, int codigoResultado,Intent datos) {
+        if(codigoDeLaActividad==1){
+            finish();
+        }
     }
 }
